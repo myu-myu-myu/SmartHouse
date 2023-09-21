@@ -1,1 +1,1 @@
-rootProject.name = "XppppFor3rdGen"
+rootProject.name = "XppppForKouhai"
