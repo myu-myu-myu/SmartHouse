@@ -8,7 +8,6 @@ class NormalWheel: WheelAbstraction {
     }
 }
 
-
 //class OptionWheel: WheelAbstraction {
 //    private fun rotateHighSpeed(): String {
 //        return "オプションホイールが超高速回転します！"

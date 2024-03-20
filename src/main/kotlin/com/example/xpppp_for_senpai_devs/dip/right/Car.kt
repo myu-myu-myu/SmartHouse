@@ -1,5 +1,4 @@
 package com.example.xpppp_for_senpai_devs.dip.right
-
 import DIP.Right.NormalWheel
 
 interface WheelAbstraction {
@@ -17,6 +16,11 @@ class Car(private val wheel: WheelAbstraction ) {
         return "$wheelStatus\n車がバックします!!"
     }
 }
+fun main () {
+    val wheel = NormalWheel()
+    val car= Car(wheel)
+    println(car.drive())
+}
 
 //仕様が変わってoptionWheelにしたい場合
 //上位クラスであるCarクラスはWheelAbstractionインターフェースに依存し、具体的なNormalWheelには依存していない
@@ -25,8 +29,3 @@ class Car(private val wheel: WheelAbstraction ) {
 //また上位クラスが具体的な実装に依存していないと、変更が必要な場合に影響範囲を最小限に抑えることができる。→保守性向上
 //これが依存性逆転の原則がもたらす利点　→拡張性向上、保守性向上
 
-fun main () {
-    val wheel = NormalWheel()
-    val car= Car(wheel)
-    println(car.drive())
-}
