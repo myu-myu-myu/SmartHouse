@@ -4,7 +4,7 @@ import DIP.Right.NormalWheel
 interface WheelAbstraction {
     fun rotate(): String
 }
-
+// 下位モジュールの抽象に依存
 class Car(private val wheel: WheelAbstraction ) {
     fun drive(): String {
         val wheelStatus = wheel.rotate()
