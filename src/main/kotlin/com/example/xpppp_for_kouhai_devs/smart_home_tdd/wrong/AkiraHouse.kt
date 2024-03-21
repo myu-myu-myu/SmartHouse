@@ -1,4 +1,4 @@
-package com.example.xpppp_for_senpai_devs.smart_home_tdd.wrong
+package com.example.xpppp_for_kouhai_devs.smart_home_tdd.wrong
 //アキラくんの家を表すクラス
 class AkiraHouse(val bulb: B9000, val switch: S9000) {
     //runメソッドでスマートホームのシステムを起動する

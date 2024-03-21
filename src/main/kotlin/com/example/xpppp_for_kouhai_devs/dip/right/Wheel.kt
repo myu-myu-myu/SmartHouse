@@ -1,6 +1,6 @@
 package DIP.Right
 
-import com.example.xpppp_for_senpai_devs.dip.right.WheelAbstraction
+import com.example.xpppp_for_kouhai_devs.dip.right.WheelAbstraction
 
 // 下位モジュールの抽象に依存
 class NormalWheel: WheelAbstraction {
@@ -14,7 +14,7 @@ class NormalWheel: WheelAbstraction {
 //    private fun rotateHighSpeed(): String {
 //        return "オプションホイールが超高速回転します！"
 //    }
-//    override fun rotate(): String {
-//        return rotateHighSpeed()
-//    }
+////    override fun rotate(): String {
+////        return rotateHighSpeed()
+////    }
 //}

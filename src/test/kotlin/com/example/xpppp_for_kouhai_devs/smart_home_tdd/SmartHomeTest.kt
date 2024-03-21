@@ -1,4 +1,4 @@
-package com.example.xpppp_for_senpai_devs.smart_home_tdd
+package com.example.xpppp_for_kouhai_devs.smart_home_tdd
 
 class SmartHomeTest {
     //ここにテストを記述してください。

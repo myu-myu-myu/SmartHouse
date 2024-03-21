@@ -1,4 +1,4 @@
-package com.example.xpppp_for_senpai_devs.smart_home_tdd.wrong
+package com.example.xpppp_for_kouhai_devs.smart_home_tdd.wrong
 //B9000という型式の電球を表すクラス
 class B9000 {
     fun turnOn(){

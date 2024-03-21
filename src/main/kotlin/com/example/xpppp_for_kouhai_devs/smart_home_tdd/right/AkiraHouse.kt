@@ -1,4 +1,4 @@
-package com.example.xpppp_for_senpai_devs.smart_home_tdd.right
+package com.example.xpppp_for_kouhai_devs.smart_home_tdd.right
 //ヒント
 //DIPの講義で使用したCarのコードを参考にしましょう。
 //wrongフォルダに良くない例としてスマートホームのサンプルコードを示してあります。
