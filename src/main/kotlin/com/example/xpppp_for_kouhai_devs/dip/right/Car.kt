@@ -1,5 +1,6 @@
 package com.example.xpppp_for_kouhai_devs.dip.right
 import DIP.Right.NormalWheel
+import DIP.Right.OptionWheel
 
 interface WheelAbstraction {
     fun rotate(): String
@@ -7,19 +8,23 @@ interface WheelAbstraction {
 // 下位モジュールの抽象に依存
 class Car(private val wheel: WheelAbstraction ) {
     fun drive(): String {
-        val wheelStatus = wheel.rotate()
-        return "$wheelStatus\n車が走ります!!"
+        return "${wheel.rotate()} -- 車が走ります!! \n"
     }
-
     fun back(): String {
-        val wheelStatus = wheel.rotate()
-        return "$wheelStatus\n車がバックします!!"
+        return "${wheel.rotate()} -- 車がバックします!! \n"
     }
 }
 fun main () {
+    println(" - - - Right version - - - ")
     val wheel = NormalWheel()
-    val car= Car(wheel)
+    val car   = Car(wheel)
     println(car.drive())
+    println(car.back())
+
+    val wheel2 = OptionWheel()
+    val car2   = Car(wheel2)
+    println(car2.drive())
+    println(car2.back())
 }
 
 //　仕様が変わってoptionWheelにしたい場合

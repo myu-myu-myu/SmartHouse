@@ -9,7 +9,7 @@ class AkiraHouse(val bulb: B9000, val switch: S9000) {
     //ここから下は各部屋の照明を管理するメソッド
     private fun lighting(bulb: B9000, switch: S9000){
         if(switch.isON()){
-            bulb.turnOn()
+            bulb.lightOn()
         }else{
             bulb.turnOff()
         }
